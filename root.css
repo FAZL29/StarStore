@@ -1,0 +1,21 @@
+:root{
+	--body-color:hsla(256,52%,4%,1);
+	--body-image:radial-gradient(at 0% 0%, hsla(256,52%,4%,1) 0px, transparent 50%),radial-gradient(at 15% 0%, hsla(255,72%,50%,0.73) 0px, transparent 50%);
+	--font: 'Tajawal', sans-serif;
+	--navbar:transparent;
+	--elements:#070510;
+	--cards:#120e26;
+	--elements-gradient:linear-gradient(90deg, rgba(32,44,66,1) 0%, rgba(40,59,96,1) 100%);
+	
+	--blurple:#8957ff;
+	--note:#3d3f82;
+	--gray:#2c3753;
+	--yellow:#ffad26;
+	--purple:#7461fb;
+	--blue:#3371ff;
+	--light-blue:#7289DA;
+	--discord:#5865F2;
+	
+	--text:#ffffff;
+	--white:#fff;
+}
