@@ -1,0 +1,252 @@
+		
+		<!DOCTYPE html>
+<html>
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2664669811676894" crossorigin="anonymous"></script>
+		<title>Fast Bots</title>
+		<link rel="icon" href="images/favicon.png">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<meta name="author" content="TARIQ">
+		<meta name="keywords" content>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard">
+		<meta property="og:title" content="Fast Bots">
+		<meta property="og:description" content="Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard">
+		<meta property="og:url" content="/">
+		<meta name="theme-color" content="#622dfc">
+		<meta property="og:image" content="images/meta.png">
+		<meta name="twitter:card" content="summary_large_image">
+		
+		<link href="css/root.css" rel="stylesheet">
+		
+		<script src="js/jquery-3.6.0.min.js"></script>
+		
+		<link rel="stylesheet" href="css/all.min.css">
+		<script src="js/all.min.js"></script>
+		
+		<link href="css/materialize.css" rel="stylesheet">
+		
+		<link href="css/balloon.min.css" rel="stylesheet">
+		
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<link href="css/mdb.dark.min.css" rel="stylesheet">
+		
+		<script src="js/scrollreveal.js"></script>
+		
+		<link href="css/jquery-confirm.min.css" rel="stylesheet">
+		<script src="js/jquery-confirm.min.js"></script>
+		
+		<link href="css/tom-select.min.css" rel="stylesheet">
+		<link href="css/tom-select.bootstrap5.min.css" rel="stylesheet">
+		<script src="js/tom-select.complete.min.js"></script>
+		
+		<script src="js/qrcode.js"></script>
+		<script src="js/jquery.qrcode.js"></script>
+		
+		<link href="css/owl.carousel.min.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css" rel="stylesheet">
+		<script src="js/owl.carousel.min.js"></script>
+		
+		<link href="css/component.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.css">
+		<link rel="stylesheet" type="text/css" href="css/custom_dt_html5.css">
+		<link rel="stylesheet" type="text/css" href="css/dt-global_style.css">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Cairo&amp;family=Manrope:wght@600&amp;family=Monda&amp;family=Montserrat&amp;family=Roboto+Mono&amp;family=Tajawal&amp;family=Nova+Flat&amp;family=Nunito+Sans&amp;family=Source+Code+Pro&amp;family=Open+Sans:wght@400&amp;family=Poppins:wght@400&amp;display=swap" rel="stylesheet">
+		
+		<script src="js/sweetalert2.all.min.js"></script>
+		<link href="css/dark.css" rel="stylesheet">
+		
+		<script src="js/animations.js" defer></script>
+		<link href="css/overwrites.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/animations.css" rel="stylesheet">
+		<link href="css/scrollbar.css" rel="stylesheet">
+	</head>
+	<body class="d-flex flex-column min-vh-100">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand me-2" href>
+					<img src="images/favicon.png" width="40px" style="margin-top: -1px;" oncontextmenu="return false" draggable="false">
+					&nbsp;
+				</a>
+				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarButtonsExample">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="store.html"><i class="fal fa-store"></i>&nbsp; Store</a>
+						</li>
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="q97eCxaRRx.html" target="_blank"><i class="fal fa-user-headset"></i>&nbsp; Support</a>
+						</li>
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="/twitter" target="_blank"><i class="fab fa-twitter"></i>&nbsp; Twitter</a>
+						</li>
+					</ul>
+					<div class="d-flex align-items-center list-unstyled">
+						
+							<button onclick="authorize()" type="button" class="btn-login me-3"><img src="images/discord.png" width="20px">&nbsp; Login with Discord</button>
+						
+					</div>
+				</div>
+			</div>
+		</nav>
+		<script>
+			let authorizeWindow;
+			async function authorize(){
+				if(authorizeWindow && !authorizeWindow.closed) return authorizeWindow.focus();
+				authorizeWindow = popupwindow("/login", "_blank", 500, 900);
+				setInterval(async() => {
+					let authorizeWindowURL;
+					try{
+						authorizeWindowURL = authorizeWindow.location.href;
+					}catch(e){}
+					if(authorizeWindowURL == location.origin + "/"){
+						authorizeWindow.close();
+						let isLogged = await fetch("/api/isAuthenticated", {method: "POST"}).then(res => res.json());
+						if(isLogged) location.reload();
+					}
+				}, 1000);
+			}
+		</script>
+		<!-- <span class="shadow" style="left: -150px;top: -100px;"></span> -->
+		<div style="margin-top: 4%;"></div>
+		<div class="container" id="main-root">
+		
+		<div class="container">
+			<p>Last updated: July 4, 2022</p>
+			<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+			<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+			<h2><strong>Privacy Policy</strong></h2>
+			<p>At fastbots.co, accessible from <a href="fastbots.co" target="_blank">https://fastbots.co</a>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by fastbots.co and how we use it.</p>
+			<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+			<h2>Consent</h2>
+			<p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+			<h2>Information we collect</h2>
+			<p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+			<p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+			<p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+			<h2>How we use your information</h2>
+			<p>We use the information we collect in various ways, including to:</p>
+			<ul>
+				<li>Provide, operate, and maintain our website</li>
+				<li>Improve, personalize, and expand our website</li>
+				<li>Understand and analyze how you use our website</li>
+				<li>Develop new products, services, features, and functionality</li>
+				<li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+				<li>Send you emails</li>
+				<li>Find and prevent fraud</li>
+			</ul>
+			<h2>Log Files</h2>
+			<p>fastbots.co follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+			<h2>Google DoubleClick DART Cookie</h2>
+			<p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+			<h2>Advertising Partners Privacy Policies</h2>
+			<p>You may consult this list to find the Privacy Policy for each of the advertising partners of fastbots.co</p>
+			<p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on fastbots.co, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+			<p>Note that fastbots.co has no access to or control over these cookies that are used by third-party advertisers.</p>
+			<h2>Third Party Privacy Policies</h2>
+			<p>fastbots.co's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+			<p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+			<h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+			<p>Under the CCPA, among other rights, California consumers have the right to:</p>
+			<p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+			<p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+			<p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
+			<p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+			<h2>GDPR Data Protection Rights</h2>
+			<p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+			<p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+			<p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+			<p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+			<p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+			<p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
+			<p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+			<p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+			<h2>Children's Information</h2>
+			<p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+			<p>fastbots.co does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+			<h1>Contact Us</h1>
+			<p>If you have any questions about this Privacy Policy, You can contact us:</p>
+			<ul>
+				<li><a href="email-protection.html#4d3e383d3d223f390d2b2c3e392f22393e632e22"><span class="__cf_email__" data-cfemail="4f3c3a3f3f203d3b0f292e3c3b2d203b3c612c20">[email&#160;protected]</span></a></li>
+				<li><a href="q97eCxaRRx.html" target="_blank">Discord</a></li>
+				<li><a href="/twitter" target="_blank">Twitter</a></li>
+			</ul>
+		</div>
+		
+				</div>
+		<div style="margin-top: 4%;"></div>
+		<div class="modal top fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="logoutModalLabel"><i class="fad fa-sign-out-alt text-danger"></i> Logout</h5>
+						<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Are you sure you want to logout?
+					</div>
+					<div class="modal-footer">
+						<a href>
+							<button class="btn btn-danger"><i class="fad fa-sign-out-alt"></i> Logout</button>
+						</a>
+						<button class="btn btn-blurple" data-mdb-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mb-5">
+			<!-- banner -->
+			<ins class="adsbygoogle" style="display:inline-block;width:100%;height:100px" data-ad-client="ca-pub-2664669811676894" data-ad-slot="2714921340"></ins>
+			<script data-cfasync="false" src="js/email-decode.min.js"></script><script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<footer class="shadow-lg mt-auto footer">
+			<div class="container pt-4">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 mb-4">
+						<h5 class="text-blurple"><img src="images/circle.png" width="30px" oncontextmenu="return false" draggable="false"> Fast Bots</h5>
+						<p>Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard</p>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5 class="text-blurple"><i class="fal fa-address-card"></i> Contact</h5>
+						<ul class="list-unstyled mb-0">
+							<li><a href="q97eCxaRRx.html" target="_blank" class="text-white"><i class="fal fa-user-headset"></i> Support</a></li>
+							<li><a href="/twitter" target="_blank" class="text-white"><i class="fab fa-twitter" style="color: #1d9bf0;"></i> Twitter</a></li>
+							<li><a href="index_1.html" target="_blank" class="text-white"><i class="fad fa-user-crown"></i> Author</a></li>
+							<li><a href="email-protection.html#7d0e080d0d120f093d1b1c0e091f12090e531e12" class="text-white"><i class="fad fa-envelope"></i> <span class="__cf_email__" data-cfemail="10636560607f62645076716364727f64633e737f">[email&#160;protected]</span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5 class="text-blurple"><i class="fal fa-browser"></i> Pages</h5>
+						<ul class="list-unstyled">
+							<li><a href class="text-white">Home Page</a></li>
+							<li><a href="store.html" class="text-white">Store</a></li>
+							<li><a href="terms.html" class="text-warning">Terms Of Service</a></li>
+							<li><a href="privacy.html" class="text-warning">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; 2022 All Rights Reserved, <a href="index_1.html" target="_blank">TARIQ</a></div>
+		</footer>
+		
+		<button onclick="scrolltop()" class="btn btn-blurple scrollbtn fs-4 btn-floating btn-lg" id="scrollbtn"><i class="fad fa-angle-up"></i></button>
+		<input id="copyinput" hidden>
+		<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/main.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/mdb.min.js"></script>
+		<script src="js/datatables.js"></script>
+		<script src="js/dataTables.buttons.min.js"></script>
+		<script src="js/jszip.min.js"></script>    
+		<script src="js/buttons.html5.min.js"></script>
+		<script src="js/buttons.print.min.js"></script>
+		<script src="js/main_1.js"></script>
+	<script>(function(){var js = "window['__CF$cv$params']={r:'7514c432988c58ba',m:'ueAKULMyXOGSguSj_B6b6uKfkpXicKF1oOoYyznHPJs-1664287235-0-AX0VCo0y6raSgQ5BjfoCdb3PA4pASizzF1CGuiNN4jJ0xcPqF4G/fAKelcABR4Mku2LM3cKSudIW4YTlTXE1fkcJOiIipshXF4tG+QO1tFZqZPssMqteAWij7gbeElCNwA==',s:[0x7c313ed3b5,0xd5771a45ba],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
+		

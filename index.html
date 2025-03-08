@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2664669811676894" crossorigin="anonymous"></script>
+		<title>Star Dev</title>
+		<link rel="icon" href="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<meta name="author" content="TARIQ">
+		<meta name="keywords" content>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard">
+		<meta property="og:title" content="Fast Bots">
+		<meta property="og:description" content="Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard">
+		<meta property="og:url" content="/">
+		<meta name="theme-color" content="#622dfc">
+		<meta property="og:image" content="images/meta.png">
+		<meta name="twitter:card" content="summary_large_image">
+		
+		<link href="css/root.css" rel="stylesheet">
+		
+		<script src="js/jquery-3.6.0.min.js"></script>
+		
+		<link rel="stylesheet" href="css/all.min.css">
+		<script src="js/all.min.js"></script>
+		
+		<link href="css/materialize.css" rel="stylesheet">
+		
+		<link href="css/balloon.min.css" rel="stylesheet">
+		
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<link href="css/mdb.dark.min.css" rel="stylesheet">
+		
+		<script src="js/scrollreveal.js"></script>
+		
+		<link href="css/jquery-confirm.min.css" rel="stylesheet">
+		<script src="js/jquery-confirm.min.js"></script>
+		
+		<link href="css/tom-select.min.css" rel="stylesheet">
+		<link href="css/tom-select.bootstrap5.min.css" rel="stylesheet">
+		<script src="js/tom-select.complete.min.js"></script>
+		
+		<script src="js/qrcode.js"></script>
+		<script src="js/jquery.qrcode.js"></script>
+		
+		<link href="css/owl.carousel.min.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css" rel="stylesheet">
+		<script src="js/owl.carousel.min.js"></script>
+		
+		<link href="css/component.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.css">
+		<link rel="stylesheet" type="text/css" href="css/custom_dt_html5.css">
+		<link rel="stylesheet" type="text/css" href="css/dt-global_style.css">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Cairo&amp;family=Manrope:wght@600&amp;family=Monda&amp;family=Montserrat&amp;family=Roboto+Mono&amp;family=Tajawal&amp;family=Nova+Flat&amp;family=Nunito+Sans&amp;family=Source+Code+Pro&amp;family=Open+Sans:wght@400&amp;family=Poppins:wght@400&amp;display=swap" rel="stylesheet">
+		
+		<script src="js/sweetalert2.all.min.js"></script>
+		<link href="css/dark.css" rel="stylesheet">
+		
+		<script src="js/animations.js" defer></script>
+		<link href="css/overwrites.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/animations.css" rel="stylesheet">
+		<link href="css/scrollbar.css" rel="stylesheet">
+	</head>
+	<body class="d-flex flex-column min-vh-100">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand me-2" href>
+					<img src="images/favicon.png" width="40px" style="margin-top: -1px;" oncontextmenu="return false" draggable="false">
+					&nbsp;
+				</a>
+				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarButtonsExample">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="store.html"><i class="fal fa-store"></i>&nbsp; Store</a>
+						</li>
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="q97eCxaRRx.html" target="_blank"><i class="fal fa-user-headset"></i>&nbsp; Support</a>
+						</li>
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="/twitter" target="_blank"><i class="fab fa-twitter"></i>&nbsp; Twitter</a>
+						</li>
+					</ul>
+					<div class="d-flex align-items-center list-unstyled">
+						
+							<button onclick="authorize()" type="button" class="btn-login me-3"><img src="images/discord.png" width="20px">&nbsp; Login with Discord</button>
+						
+					</div>
+				</div>
+			</div>
+		</nav>
+		<script>
+			let authorizeWindow;
+			async function authorize(){
+				if(authorizeWindow && !authorizeWindow.closed) return authorizeWindow.focus();
+				authorizeWindow = popupwindow("/login", "_blank", 500, 900);
+				setInterval(async() => {
+					let authorizeWindowURL;
+					try{
+						authorizeWindowURL = authorizeWindow.location.href;
+					}catch(e){}
+					if(authorizeWindowURL == location.origin + "/"){
+						authorizeWindow.close();
+						let isLogged = await fetch("/api/isAuthenticated", {method: "POST"}).then(res => res.json());
+						if(isLogged) location.reload();
+					}
+				}, 1000);
+			}
+		</script>
+		<!-- <span class="shadow" style="left: -150px;top: -100px;"></span> -->
+		<div style="margin-top: 4%;"></div>
+		<div class="container" id="main-root">
+	<div style="margin-top: 6%;"></div>
+	<div class="row align-items-center">
+		<div class="col-md-6 my-2 text-center">
+			<a href="q97eCxaRRx.html" target="_blank">
+				<img src="images/logo.png" class="rounded-x animate img-perspective-main scroll-reveal" width="70%" draggable="false" oncontextmenu="return false">
+			</a>
+		</div>
+		<div class="col-md-6 my-2">
+			<h1 class="fw-light mb-3">Fast Bots</h1>
+			<h5 class="text-muted">Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard</h5>
+			
+				<button class="mx-1 btn-custom gray" onclick="authorize()">Login</button>
+			
+		</div>
+		<div style="margin-top: 25%;"></div>
+		<div class="col-md-6 my-2 scroll-reveal">
+			<h1 class="fw-light mb-3">Dashboard</h1>
+			<h5 class="text-muted">Manage your bots subscriptions quickly and easily from the dashboard without any commands</h5>
+		</div>
+		<div class="col-md-6 my-2 text-center">
+			<img src="images/dashboard_bot.png" class="rounded-3 animate image scroll-reveal" width="100%" draggable="false" oncontextmenu="return false">
+		</div>
+		<div style="margin-top: 25%;"></div>
+		<div class="col-md-6 my-2 text-center">
+			<img src="images/manage_bot.png" class="rounded-x animate image scroll-reveal" width="100%" draggable="false" oncontextmenu="return false">
+		</div>
+		<div class="col-md-6 my-2 scroll-reveal">
+			<h1 class="fw-light mb-3">Manage Your Bots</h1>
+			<h5 class="text-muted">Fully Manage bot's username, avatar, prefix and status easily from bot's edit page</h5>
+		</div>
+		<div style="margin-top: 25%;"></div>
+		<div class="col-md-6 my-2 scroll-reveal">
+			<h1 class="fw-light mb-3">Member Access</h1>
+			<h5 class="text-muted">Want your staff to manage your bots for you without them owning it? We,ve got you, with member access your staff can only manage specific bot's you allow them to manage</h5>
+		</div>
+		<div class="col-md-6 my-2 text-center">
+			<img src="images/member_access.png" class="rounded-x animate image scroll-reveal" width="100%" draggable="false" oncontextmenu="return false">
+		</div>
+		<div style="margin-top: 5%;"></div>
+		<hr>
+		<div style="margin-top: 5%;"></div>
+		<div class="col-md-12 my-2 text-center scroll-reveal">
+			<h1 class="fw-light mb-3">Enjoy our services now</h1>
+			<h5 class="text-muted">Browse our store and bots for all needs</h5>
+			<a href="store.html"><button class="mt-2 btn btn-blurple btn-lg px-5 rounded-x"><i class="fad fa-sign-in"></i> Go To Store</button></a>
+		</div>
+		<div style="margin-top: 5%;"></div>
+		<hr>
+		<div style="margin-top: 5%;"></div>
+	</div>
+		</div>
+		<div style="margin-top: 4%;"></div>
+		<div class="modal top fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="logoutModalLabel"><i class="fad fa-sign-out-alt text-danger"></i> Logout</h5>
+						<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Are you sure you want to logout?
+					</div>
+					<div class="modal-footer">
+						<a href>
+							<button class="btn btn-danger"><i class="fad fa-sign-out-alt"></i> Logout</button>
+						</a>
+						<button class="btn btn-blurple" data-mdb-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mb-5">
+			<!-- banner -->
+			<ins class="adsbygoogle" style="display:inline-block;width:100%;height:100px" data-ad-client="ca-pub-2664669811676894" data-ad-slot="2714921340"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<footer class="shadow-lg mt-auto footer">
+			<div class="container pt-4">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 mb-4">
+						<h5 class="text-blurple"><img src="images/circle.png" width="30px" oncontextmenu="return false" draggable="false"> Fast Bots</h5>
+						<p>Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard</p>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5 class="text-blurple"><i class="fal fa-address-card"></i> Contact</h5>
+						<ul class="list-unstyled mb-0">
+							<li><a href="q97eCxaRRx.html" target="_blank" class="text-white"><i class="fal fa-user-headset"></i> Support</a></li>
+							<li><a href="/twitter" target="_blank" class="text-white"><i class="fab fa-twitter" style="color: #1d9bf0;"></i> Twitter</a></li>
+							<li><a href="index_1.html" target="_blank" class="text-white"><i class="fad fa-user-crown"></i> Author</a></li>
+							<li><a href="email-protection.html#c9babcb9b9a6bbbd89afa8babdaba6bdbae7aaa6" class="text-white"><i class="fad fa-envelope"></i> <span class="__cf_email__" data-cfemail="05767075756a77714563647671676a71762b666a">[email&#160;protected]</span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5 class="text-blurple"><i class="fal fa-browser"></i> Pages</h5>
+						<ul class="list-unstyled">
+							<li><a href class="text-white">Home Page</a></li>
+							<li><a href="store.html" class="text-white">Store</a></li>
+							<li><a href="terms.html" class="text-warning">Terms Of Service</a></li>
+							<li><a href="privacy.html" class="text-warning">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; 2022 All Rights Reserved, <a href="index_1.html" target="_blank">TARIQ</a></div>
+		</footer>
+		
+		<button onclick="scrolltop()" class="btn btn-blurple scrollbtn fs-4 btn-floating btn-lg" id="scrollbtn"><i class="fad fa-angle-up"></i></button>
+		<input id="copyinput" hidden>
+		<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/main.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/mdb.min.js"></script>
+		<script src="js/datatables.js"></script>
+		<script src="js/dataTables.buttons.min.js"></script>
+		<script src="js/jszip.min.js"></script>    
+		<script src="js/buttons.html5.min.js"></script>
+		<script src="js/buttons.print.min.js"></script>
+		<script src="js/main_1.js"></script>
+	<script>(function(){var js = "window['__CF$cv$params']={r:'7514c41b8de081d3',m:'z2H5rz_Hx4dKr.5Xn15MU9_15iDU9VdA2FIYOVwvhqI-1664287231-0-AdRo7wYPviwea+YwGSK9dWQF0J1B/mBhZ/Lf8v3+nTDwnt9ZcVwunYZmk9Rw0oSaAZunRX7f+GYfqO/NCISKK2rIw/HsU5rXjWhmMwrRAx07QAC7jeb1XzY149ugUMlbNg==',s:[0x43214a138d,0xe392aaff30],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>

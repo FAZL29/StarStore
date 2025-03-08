@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2664669811676894" crossorigin="anonymous"></script>
+		<title>Fast Bots</title>
+		<link rel="icon" href="images/favicon.png">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="UTF-8">
+		<meta name="author" content="TARIQ">
+		<meta name="keywords" content>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard">
+		<meta property="og:title" content="Fast Bots">
+		<meta property="og:description" content="Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard">
+		<meta property="og:url" content="/">
+		<meta name="theme-color" content="#622dfc">
+		<meta property="og:image" content="images/meta.png">
+		<meta name="twitter:card" content="summary_large_image">
+		
+		<link href="css/root.css" rel="stylesheet">
+		
+		<script src="js/jquery-3.6.0.min.js"></script>
+		
+		<link rel="stylesheet" href="css/all.min.css">
+		<script src="js/all.min.js"></script>
+		
+		<link href="css/materialize.css" rel="stylesheet">
+		
+		<link href="css/balloon.min.css" rel="stylesheet">
+		
+		<link href="css/mdb.min.css" rel="stylesheet">
+		<link href="css/mdb.dark.min.css" rel="stylesheet">
+		
+		<script src="js/scrollreveal.js"></script>
+		
+		<link href="css/jquery-confirm.min.css" rel="stylesheet">
+		<script src="js/jquery-confirm.min.js"></script>
+		
+		<link href="css/tom-select.min.css" rel="stylesheet">
+		<link href="css/tom-select.bootstrap5.min.css" rel="stylesheet">
+		<script src="js/tom-select.complete.min.js"></script>
+		
+		<script src="js/qrcode.js"></script>
+		<script src="js/jquery.qrcode.js"></script>
+		
+		<link href="css/owl.carousel.min.css" rel="stylesheet">
+		<link href="css/owl.theme.default.min.css" rel="stylesheet">
+		<script src="js/owl.carousel.min.js"></script>
+		
+		<link href="css/component.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/datatables.css">
+		<link rel="stylesheet" type="text/css" href="css/custom_dt_html5.css">
+		<link rel="stylesheet" type="text/css" href="css/dt-global_style.css">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Cairo&amp;family=Manrope:wght@600&amp;family=Monda&amp;family=Montserrat&amp;family=Roboto+Mono&amp;family=Tajawal&amp;family=Nova+Flat&amp;family=Nunito+Sans&amp;family=Source+Code+Pro&amp;family=Open+Sans:wght@400&amp;family=Poppins:wght@400&amp;display=swap" rel="stylesheet">
+		
+		<script src="js/sweetalert2.all.min.js"></script>
+		<link href="css/dark.css" rel="stylesheet">
+		
+		<script src="js/animations.js" defer></script>
+		<link href="css/overwrites.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="css/animations.css" rel="stylesheet">
+		<link href="css/scrollbar.css" rel="stylesheet">
+	</head>
+	<body class="d-flex flex-column min-vh-100">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand me-2" href>
+					<img src="images/favicon.png" width="40px" style="margin-top: -1px;" oncontextmenu="return false" draggable="false">
+					&nbsp;
+				</a>
+				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarButtonsExample">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="store.html"><i class="fal fa-store"></i>&nbsp; Store</a>
+						</li>
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="q97eCxaRRx.html" target="_blank"><i class="fal fa-user-headset"></i>&nbsp; Support</a>
+						</li>
+						<li class="nav-item mx-2 my-1">
+							<a class="nav-link btn-custom" href="/twitter" target="_blank"><i class="fab fa-twitter"></i>&nbsp; Twitter</a>
+						</li>
+					</ul>
+					<div class="d-flex align-items-center list-unstyled">
+						
+							<button onclick="authorize()" type="button" class="btn-login me-3"><img src="images/discord.png" width="20px">&nbsp; Login with Discord</button>
+						
+					</div>
+				</div>
+			</div>
+		</nav>
+		<script>
+			let authorizeWindow;
+			async function authorize(){
+				if(authorizeWindow && !authorizeWindow.closed) return authorizeWindow.focus();
+				authorizeWindow = popupwindow("/login", "_blank", 500, 900);
+				setInterval(async() => {
+					let authorizeWindowURL;
+					try{
+						authorizeWindowURL = authorizeWindow.location.href;
+					}catch(e){}
+					if(authorizeWindowURL == location.origin + "/"){
+						authorizeWindow.close();
+						let isLogged = await fetch("/api/isAuthenticated", {method: "POST"}).then(res => res.json());
+						if(isLogged) location.reload();
+					}
+				}, 1000);
+			}
+		</script>
+		<!-- <span class="shadow" style="left: -150px;top: -100px;"></span> -->
+		<div style="margin-top: 4%;"></div>
+		<div class="container" id="main-root">
+	<div class="row">
+		<div class="col-lg-4 my-2"></div>
+		<div class="col-lg-4 my-2"></div>
+		<div class="col-lg-4 my-2">
+			<div class="card h-100">
+				<div class="card-header fs-5">Balance: <span aria-label="$0.00" data-balloon-pos="up">$0.00</span></div>
+				<div class="card-body">
+					<button type="button" class="btn btn-blurple btn-lg mb-0 btn-block rounded-pill" data-mdb-toggle="modal" data-mdb-target="https://discord.gg/star-s">Go To Buy Bots</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12 my-2">
+			
+				<div id="pricingWrapper" class="row align-items-center">
+					
+					
+						
+						<div class="col-12 col-lg-3">
+							<div class="card stacked mt-5">
+								<div class="card-header pt-0 pb-2">
+									<center>
+										<img src="images/1.png" class="rounded-circle card-price rounded-3">
+										<h4 class="text-white mt-3">Ticket &amp; Auto Assistant</h4>
+										
+										<p class="text-white mb-0 fw-normal fs-6">Starts from <span class="text-warning">$7/mo</span></p>
+									</center>
+									
+								</div>
+								<div class="card-body">
+									<button data-mdb-toggle="modal" data-mdb-target="#purchaseModal_ticket_auto_assistant_bot" class="btn btn-blurple rounded-x btn-block btn-lg"><i class="fad fa-shopping-cart"></i>&nbsp; Purchase</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="modal top fade" id="purchaseModal_ticket_auto_assistant_bot" tabindex="-1" aria-labelledby="purchaseModalLabel_ticket_auto_assistant_bot" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="purchaseModalLabel_ticket_auto_assistant_bot"><img src="images/1.png" width="30px" oncontextmenu="return false" draggable="false"> Ticket &amp; Auto Assistant</h5>
+										<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('ticket_auto_assistant_bot', 1)">1 Month ($7)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('ticket_auto_assistant_bot', 2)">2 Months ($13)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('ticket_auto_assistant_bot', 3)">3 Months ($19)</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						
+						<div class="col-12 col-lg-3">
+							<div class="card stacked mt-5">
+								<div class="card-header pt-0 pb-2">
+									<center>
+										<img src="images/2.png" class="rounded-circle card-price rounded-3">
+										<h4 class="text-white mt-3">Movie News</h4>
+										
+										<p class="text-white mb-0 fw-normal fs-6">Starts from <span class="text-warning">$7/mo</span></p>
+									</center>
+									
+								</div>
+								<div class="card-body">
+									<button data-mdb-toggle="modal" data-mdb-target="#purchaseModal_movie_news_bot" class="btn btn-blurple rounded-x btn-block btn-lg"><i class="fad fa-shopping-cart"></i>&nbsp; Purchase</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="modal top fade" id="purchaseModal_movie_news_bot" tabindex="-1" aria-labelledby="purchaseModalLabel_movie_news_bot" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="purchaseModalLabel_movie_news_bot"><img src="images/2.png" width="30px" oncontextmenu="return false" draggable="false"> Movie News</h5>
+										<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('movie_news_bot', 1)">1 Month ($7)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('movie_news_bot', 2)">2 Months ($13)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('movie_news_bot', 3)">3 Months ($19)</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						
+						<div class="col-12 col-lg-3">
+							<div class="card stacked mt-5">
+								<div class="card-header pt-0 pb-2">
+									<center>
+										<img src="images/3.png" class="rounded-circle card-price rounded-3">
+										<h4 class="text-white mt-3">Roles Dropdown</h4>
+										
+										<p class="text-white mb-0 fw-normal fs-6">Starts from <span class="text-warning">$5/mo</span></p>
+									</center>
+									
+								</div>
+								<div class="card-body">
+									<button data-mdb-toggle="modal" data-mdb-target="#purchaseModal_roles_dropdown_bot" class="btn btn-blurple rounded-x btn-block btn-lg"><i class="fad fa-shopping-cart"></i>&nbsp; Purchase</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="modal top fade" id="purchaseModal_roles_dropdown_bot" tabindex="-1" aria-labelledby="purchaseModalLabel_roles_dropdown_bot" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="purchaseModalLabel_roles_dropdown_bot"><img src="images/3.png" width="30px" oncontextmenu="return false" draggable="false"> Roles Dropdown</h5>
+										<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('roles_dropdown_bot', 1)">1 Month ($5)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('roles_dropdown_bot', 2)">2 Months ($9)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('roles_dropdown_bot', 3)">3 Months ($13)</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						
+						<div class="col-12 col-lg-3">
+							<div class="card stacked mt-5">
+								<div class="card-header pt-0 pb-2">
+									<center>
+										<img src="images/0.png" class="rounded-circle card-price rounded-3">
+										<h4 class="text-white mt-3">Suggestions</h4>
+										
+										<p class="text-white mb-0 fw-normal fs-6">Starts from <span class="text-warning">$4/mo</span></p>
+									</center>
+									
+								</div>
+								<div class="card-body">
+									<button data-mdb-toggle="modal" data-mdb-target="#purchaseModal_suggestions_bot" class="btn btn-blurple rounded-x btn-block btn-lg"><i class="fad fa-shopping-cart"></i>&nbsp; Purchase</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="modal top fade" id="purchaseModal_suggestions_bot" tabindex="-1" aria-labelledby="purchaseModalLabel_suggestions_bot" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="purchaseModalLabel_suggestions_bot"><img src="images/0.png" width="30px" oncontextmenu="return false" draggable="false"> Suggestions</h5>
+										<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('suggestions_bot', 1)">1 Month ($4)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('suggestions_bot', 2)">2 Months ($7)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('suggestions_bot', 3)">3 Months ($10)</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						
+						<div class="col-12 col-lg-3">
+							<div class="card stacked mt-5">
+								<div class="card-header pt-0 pb-2">
+									<center>
+										<img src="images/3.png" class="rounded-circle card-price rounded-3">
+										<h4 class="text-white mt-3">Music</h4>
+										
+										<p class="text-white mb-0 fw-normal fs-6">Starts from <span class="text-warning">$3/mo</span></p>
+									</center>
+									
+								</div>
+								<div class="card-body">
+									<button data-mdb-toggle="modal" data-mdb-target="#purchaseModal_music_bot" class="btn btn-blurple rounded-x btn-block btn-lg"><i class="fad fa-shopping-cart"></i>&nbsp; Purchase</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="modal top fade" id="purchaseModal_music_bot" tabindex="-1" aria-labelledby="purchaseModalLabel_music_bot" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="purchaseModalLabel_music_bot"><img src="images/3.png" width="30px" oncontextmenu="return false" draggable="false"> Music</h5>
+										<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('music_bot', 1)">1 Month ($3)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('music_bot', 2)">2 Months ($5)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('music_bot', 3)">3 Months ($7)</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						
+						<div class="col-12 col-lg-3">
+							<div class="card stacked mt-5">
+								<div class="card-header pt-0 pb-2">
+									<center>
+										<img src="images/0.png" class="rounded-circle card-price rounded-3">
+										<h4 class="text-white mt-3">Auto Role</h4>
+										
+										<p class="text-white mb-0 fw-normal fs-6">Starts from <span class="text-warning">$3/mo</span></p>
+									</center>
+									
+								</div>
+								<div class="card-body">
+									<button data-mdb-toggle="modal" data-mdb-target="#purchaseModal_auto_role_bot" class="btn btn-blurple rounded-x btn-block btn-lg"><i class="fad fa-shopping-cart"></i>&nbsp; Purchase</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="modal top fade" id="purchaseModal_auto_role_bot" tabindex="-1" aria-labelledby="purchaseModalLabel_auto_role_bot" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="purchaseModalLabel_auto_role_bot"><img src="images/0.png" width="30px" oncontextmenu="return false" draggable="false"> Auto Role</h5>
+										<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('auto_role_bot', 1)">1 Month ($3)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('auto_role_bot', 2)">2 Months ($5)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('auto_role_bot', 3)">3 Months ($7)</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+						
+						<div class="col-12 col-lg-3">
+							<div class="card stacked mt-5">
+								<div class="card-header pt-0 pb-2">
+									<center>
+										<img src="images/2.png" class="rounded-circle card-price rounded-3">
+										<h4 class="text-white mt-3">Auto Reaction</h4>
+										
+										<p class="text-white mb-0 fw-normal fs-6">Starts from <span class="text-warning">$2/mo</span></p>
+									</center>
+									
+								</div>
+								<div class="card-body">
+									<button data-mdb-toggle="modal" data-mdb-target="#purchaseModal_auto_reaction_bot" class="btn btn-blurple rounded-x btn-block btn-lg"><i class="fad fa-shopping-cart"></i>&nbsp; Purchase</button>
+								</div>
+							</div>
+						</div>
+						
+						<div class="modal top fade" id="purchaseModal_auto_reaction_bot" tabindex="-1" aria-labelledby="purchaseModalLabel_auto_reaction_bot" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+							<div class="modal-dialog modal-lg modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="purchaseModalLabel_auto_reaction_bot"><img src="images/2.png" width="30px" oncontextmenu="return false" draggable="false"> Auto Reaction</h5>
+										<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										<div class="row">
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('auto_reaction_bot', 1)">1 Month ($2)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('auto_reaction_bot', 2)">2 Months ($3.5)</button>
+											</div>
+											<div class="col-4 res-padding">
+												<button class="btn btn-block btn-blurple btn-lg rounded-x px-1" data-mdb-dismiss="modal" onclick="purchase('auto_reaction_bot', 3)">3 Months ($5)</button>
+											</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Cancel</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					<div class="col-12 col-lg-3">
+						<div class="card stacked mt-5">
+							<div class="card-header pt-0 pb-2">
+								<center>
+									<img src="images/1.png" class="rounded-circle card-price rounded-3">
+									<h4 class="text-white mt-3">Custom Bot</h4>
+									<p class="text-white mb-0 fw-normal fs-6">Starts from <span class="text-warning">$1/mo</span></p>
+								</center>
+							</div>
+							<div class="card-body">
+								<button onclick="window.open('/support', '_blank')" class="btn btn-block btn-blurple btn-lg rounded-x"><i class="fad fa-info"></i>&nbsp; Contact Us</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+	<div class="modal top fade" id="chargeBalanceModal" tabindex="-1" aria-labelledby="chargeBalanceModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="chargeBalanceModalLabel">Choose Payment Method</h5>
+					<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-6 my-1">
+							<button type="button" class="btn btn-blurple btn-block btn-lg" data-mdb-dismiss="modal" data-mdb-toggle="modal" data-mdb-target="#chargePayPalModal"><i class="fab fa-paypal"></i>&nbsp; PayPal</button>
+						</div>
+						<div class="col-6 my-1">
+							<button type="button" class="btn btn-blurple btn-block btn-lg" data-mdb-dismiss="modal" data-mdb-toggle="modal" data-mdb-target="#chargeCreditCardModal"><i class="fad fa-credit-card"></i>&nbsp; Credit Card</button>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal top fade" id="chargePayPalModal" tabindex="-1" aria-labelledby="chargePayPalModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="chargePayPalModalLabel">Top up Balance (PayPal)</h5>
+					<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						
+							<div class="col-4 my-1">
+								<button class="btn btn-blurple btn-lg btn-block" id="amount_5" onclick="selectAmount('5', this)">$5</button>
+							</div>
+						
+							<div class="col-4 my-1">
+								<button class="btn btn-blurple btn-lg btn-block" id="amount_10" onclick="selectAmount('10', this)">$10</button>
+							</div>
+						
+							<div class="col-4 my-1">
+								<button class="btn btn-blurple btn-lg btn-block" id="amount_15" onclick="selectAmount('15', this)">$15</button>
+							</div>
+						
+							<div class="col-4 my-1">
+								<button class="btn btn-blurple btn-lg btn-block" id="amount_25" onclick="selectAmount('25', this)">$25</button>
+							</div>
+						
+							<div class="col-4 my-1">
+								<button class="btn btn-blurple btn-lg btn-block" id="amount_50" onclick="selectAmount('50', this)">$50</button>
+							</div>
+						
+							<div class="col-4 my-1">
+								<button class="btn btn-blurple btn-lg btn-block" id="amount_100" onclick="selectAmount('100', this)">$100</button>
+							</div>
+						
+					</div>
+					<button class="mt-2 btn btn-blurple btn-lg btn-block" id="other_amount_btn" onclick="selectAmount()">Other Amount</button>
+					<div class="form-outline mt-2" id="other_amount_div" hidden>
+						<input class="form-control form-control-lg" type="number" value min id="amount">
+						<label class="form-label" for="amount">Amount</label>
+					</div>
+					<p class="text-danger mb-0 mt-2">Note: PayPal Tax is not included in the amount</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-blurple" data-mdb-dismiss="modal" onclick="charge(document.getElementById('amount').value)"><i class="fab fa-paypal"></i>&nbsp; Top up Balance</button>
+					<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Cancel</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal top fade" id="chargeCreditCardModal" tabindex="-1" aria-labelledby="chargeCreditCardModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="chargeCreditCardModalLabel">Top up Balance (Credit Card)</h5>
+					<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-6 my-1">
+							
+								<p>Credit card will be supported on 10th of September, please be patient with us</p>
+								<p class="text-end">سيتم دعم بطاقة البنكية في الأول من سبتمبر، نشكركم لصبركم</p>
+								<p class="text-center fs-4" id="timer"></p>
+								<script>
+									var x = setInterval(function () {
+										var diff = new Date("9/10/2022").getTime() - Date.now();
+										
+										var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+										var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+										var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+										var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+										
+										document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+										
+										if (diff < 0) {
+											clearInterval(x);
+											document.getElementById("timer").innerHTML = 'Timer Ended';
+										}
+									}, 1000);
+								</script>
+							
+							<button type="button" class="btn btn-blurple btn-block btn-lg" data-mdb-dismiss="modal" data-mdb-toggle="modal" data-mdb-target="#chargePayPalModal"><i class="fab fa-paypal"></i>&nbsp; Use PayPal</button>
+						</div>
+						<div class="col-6 my-1">
+							<div class="container">
+								<div class="credit-card">
+									<span>Credit Card</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-mdb-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script>
+		window.onload = () => {
+			
+			
+			if(screen.width < 525){
+				let elms = document.getElementsByClassName("res-padding");
+				for(var i = 0; i < elms.length; i++){
+					elms[i].classList.add("p-1");
+				}
+			}
+		};
+		
+		function selectAmount(selectedAmount, elm){
+			
+				amount_5.classList.remove("btn-danger");
+				amount_5.classList.add("btn-blurple");
+			
+				amount_10.classList.remove("btn-danger");
+				amount_10.classList.add("btn-blurple");
+			
+				amount_15.classList.remove("btn-danger");
+				amount_15.classList.add("btn-blurple");
+			
+				amount_25.classList.remove("btn-danger");
+				amount_25.classList.add("btn-blurple");
+			
+				amount_50.classList.remove("btn-danger");
+				amount_50.classList.add("btn-blurple");
+			
+				amount_100.classList.remove("btn-danger");
+				amount_100.classList.add("btn-blurple");
+			
+			if(!selectedAmount){
+				amount.value = "";
+				other_amount_btn.hidden = true;
+				return other_amount_div.hidden = false;
+			}
+			other_amount_btn.hidden = false;
+			other_amount_div.hidden = true;
+			elm.classList.remove("btn-blurple");
+			elm.classList.add("btn-danger");
+			amount.value = selectedAmount;
+		}
+		
+		async function charge(amount){
+			toast();
+			let data = await fetch("/store/charge", {
+				method: "POST",
+				body: JSON.stringify({
+					amount: Number(amount)
+				}),
+				headers: {
+					"Content-Type": "application/json"
+				}
+			}).then(res => res.json());
+			if(data.url){
+				toast('Redirecting To Payment Gateway...');
+				setTimeout(() => {
+					location.href = data.url;
+				}, 1000)
+			}else if(data.error){
+				M.toast({"html": '<i class="fad fa-times text-danger fs-4"></i>&nbsp; ' + data.error});
+			}else{
+				M.toast({"html": '<i class="fad fa-times text-danger fs-4"></i>&nbsp; An error has occurred, please report this in our &nbsp; <a href="/support" target="_blank">Support Server</a>'});
+			}
+		}
+		
+		async function purchase(ID, months_count = 1){
+			if(!ID) return;
+			toast();
+			let data = await fetch("/store/purchase", {
+				method: "POST",
+				body: JSON.stringify({
+					"id": ID,
+					"months": months_count
+				}),
+				headers: {
+					"Content-Type": "application/json"
+				}
+			}).then(res => res.json());
+			if(data.success){
+				M.toast({"html": '<i class="fad fa-check text-blurple fs-4"></i>&nbsp; Product Purchased Successfully'});
+				setTimeout(function(){
+					location.href = '/dashboard';
+				}, 1000);
+			}else{
+				if(screen.width < 1000){
+					alert(data.error);
+				}else{
+					M.toast({"html": '<i class="fad fa-times text-danger fs-4"></i>&nbsp; ' + data.error});
+				}
+			}
+		}
+	</script>
+		</div>
+		<div style="margin-top: 4%;"></div>
+		<div class="modal top fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="logoutModalLabel"><i class="fad fa-sign-out-alt text-danger"></i> Logout</h5>
+						<button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						Are you sure you want to logout?
+					</div>
+					<div class="modal-footer">
+						<a href>
+							<button class="btn btn-danger"><i class="fad fa-sign-out-alt"></i> Logout</button>
+						</a>
+						<button class="btn btn-blurple" data-mdb-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container mb-5">
+			<!-- banner -->
+			<ins class="adsbygoogle" style="display:inline-block;width:100%;height:100px" data-ad-client="ca-pub-2664669811676894" data-ad-slot="2714921340"></ins>
+			<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		<footer class="shadow-lg mt-auto footer">
+			<div class="container pt-4">
+				<div class="row">
+					<div class="col-lg-6 col-md-12 mb-4">
+						<h5 class="text-blurple"><img src="images/circle.png" width="30px" oncontextmenu="return false" draggable="false"> Fast Bots</h5>
+						<p>Discord bots never been easier with Fast Bots, receive your bot immediately upon purchase, manage your bot user &amp; bot subscription directly from dashboard</p>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5 class="text-blurple"><i class="fal fa-address-card"></i> Contact</h5>
+						<ul class="list-unstyled mb-0">
+							<li><a href="q97eCxaRRx.html" target="_blank" class="text-white"><i class="fal fa-user-headset"></i> Support</a></li>
+							<li><a href="/twitter" target="_blank" class="text-white"><i class="fab fa-twitter" style="color: #1d9bf0;"></i> Twitter</a></li>
+							<li><a href="index_1.html" target="_blank" class="text-white"><i class="fad fa-user-crown"></i> Author</a></li>
+							<li><a href="email-protection.html#4f3c3a3f3f203d3b0f292e3c3b2d203b3c612c20" class="text-white"><i class="fad fa-envelope"></i> <span class="__cf_email__" data-cfemail="22515752524d50566244435156404d56510c414d">[email&#160;protected]</span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mb-4">
+						<h5 class="text-blurple"><i class="fal fa-browser"></i> Pages</h5>
+						<ul class="list-unstyled">
+							<li><a href class="text-white">Home Page</a></li>
+							<li><a href="store.html" class="text-white">Store</a></li>
+							<li><a href="terms.html" class="text-warning">Terms Of Service</a></li>
+							<li><a href="privacy.html" class="text-warning">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">&copy; 2022 All Rights Reserved, <a href="index_1.html" target="_blank">TARIQ</a></div>
+		</footer>
+		
+		<button onclick="scrolltop()" class="btn btn-blurple scrollbtn fs-4 btn-floating btn-lg" id="scrollbtn"><i class="fad fa-angle-up"></i></button>
+		<input id="copyinput" hidden>
+		<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/main.js"></script>
+		<script src="js/materialize.min.js"></script>
+		<script src="js/mdb.min.js"></script>
+		<script src="js/datatables.js"></script>
+		<script src="js/dataTables.buttons.min.js"></script>
+		<script src="js/jszip.min.js"></script>    
+		<script src="js/buttons.html5.min.js"></script>
+		<script src="js/buttons.print.min.js"></script>
+		<script src="js/main_1.js"></script>
+	<script>(function(){var js = "window['__CF$cv$params']={r:'7514c4325b3a5962',m:'T6TmFIo7uFW2SToUyEyhNbRIAziEZSnXn9qkg8Hv9T0-1664287235-0-AQcAM2pcxGyQkb0dP5NSPNGdSYEuGO2fEQF5R0vYnkNvqEQzTA+lHz14X/gj/1PBipTU8QyA/UN+9mrVJZZ5FgddTz3SIHJHG4/9u9PBIkzWaK7RtHnSP2x3mPYhgv3g8g==',s:[0x2b97dd861c,0x2518675741],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
