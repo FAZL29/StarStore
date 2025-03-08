@@ -1,0 +1,39 @@
+/* ----------------------------- */
+/* General Icons */
+/* ----------------------------- */
+.fa-adjust:before {
+    content: "\f042";
+}
+.fa-anchor:before {
+    content: "\f13d";
+}
+
+/* ----------------------------- */
+/* Social Media Icons */
+/* ----------------------------- */
+.fa-facebook:before {
+    content: "\f09a";
+}
+.fa-twitter:before {
+    content: "\f099";
+}
+
+/* ----------------------------- */
+/* Food Icons */
+/* ----------------------------- */
+.fa-pizza:before {
+    content: "\f817";
+}
+.fa-burger:before {
+    content: "\f805";
+}
+
+/* ----------------------------- */
+/* Weather Icons */
+/* ----------------------------- */
+.fa-cloud:before {
+    content: "\f0c2";
+}
+.fa-sun:before {
+    content: "\f185";
+}

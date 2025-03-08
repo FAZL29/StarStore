@@ -1,0 +1,196 @@
+body{
+	background-color: var(--body-color);
+	background-image: var(--body-image);
+	font-family: var(--font);
+	color: var(--text);
+	overflow-x: hidden !important;
+}
+
+br{
+	user-select: none;
+}
+
+code{
+	color: var(--blurple) !important;
+}
+
+.navbar, .footer{
+	background: var(--navbar) !important;
+}
+
+.card, .modal-content, .modal-body{
+	background-color: var(--cards) !important;
+	border-radius: 30px !important;
+}
+
+.dropdown-menu{
+	background-color: var(--cards) !important;
+	border: 1px solid #ccc !important;
+}
+
+.card-header, .card-footer, .modal-header, .modal-footer{
+	background-color: var(--cards) !important;
+	border-radius: 30px !important;
+}
+
+.accordion-item {
+	background-color: var(--elements);
+	border-radius: 8px !important;
+}
+
+.accordion-button {
+	background-color: var(--navbar) !important;
+	color: #ffffff !important;
+	border-radius: 8px !important;
+}
+
+.form-switch .form-check-input:checked[type=checkbox]:after{
+	background-color: #dee2e6;
+}
+
+.form-switch .form-check-input:checked{
+	background-color: var(--blurple);
+}
+
+.form-check-input[type=checkbox]:checked:focus{
+	background-color: var(--blurple);
+}
+
+.input-group .input-group-text{
+	color: #ccc !important;
+	background: var(--blurple) !important;
+	border-color: var(--blurple) !important;
+}
+
+.form-control{
+	color: #ccc !important;
+	background: var(--navbar) !important;
+	border-color: var(--purple) !important;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-leading {
+    border-top: .125rem solid var(--purple);
+    border-bottom: .125rem solid var(--purple);
+    border-left: .125rem solid var(--purple);
+}
+
+ .form-outline .form-control:focus~.form-notch .form-notch-middle {
+    border-bottom: .125rem solid;
+    border-color: var(--purple);
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-trailing {
+    border-color: currentcolor currentcolor currentcolor var(--purple);
+    border-bottom: .125rem solid var(--purple);
+    border-right: .125rem solid var(--purple);
+    border-top: .125rem solid var(--purple);
+}
+
+.form-outline .form-control:focus~.form-label {
+    color: var(--purple);
+}
+
+.ts-input, .ts-control.single .ts-input.input-active, .ts-control.multi .ts-input > div, .ts-control.multi .ts-input > div.active, .ts-dropdown, .ts-input, .ts-input input, .ts-dropdown .create, .ts-dropdown .active, .ts-dropdown .create:hover, .ts-dropdown .option:hover {
+    color: #ccc !important;
+}
+
+.ts-input, .ts-control.single .ts-input.input-active {
+    background: var(--navbar) !important;
+	border-color: var(--navbar) !important;
+	font-size: 18px;
+}
+
+.ts-control.multi .ts-input > div, .ts-control.multi .ts-input > div.active {
+    cursor: pointer;
+    margin: 0 3px 3px 0;
+    padding: 1px 5px;
+    background: var(--elements);
+    border: 0px solid #ccc;
+}
+
+.ts-dropdown, .ts-dropdown .create, .ts-dropdown .option{
+	background: var(--elements);
+}
+
+.ts-dropdown .active, .ts-dropdown .create:hover, .ts-dropdown .option:hover {
+    background-color: var(--navbar);
+}
+
+.ts-control.plugin-remove_button .item .remove {
+    border: none;
+}
+
+.ts-input.focus{
+	box-shadow: none !important;
+}
+
+.widget-content{
+	background-color: var(--elements) !important;
+	border-color: transparent !important;
+}
+
+.sorting, .sorting_asc{
+	background-color: var(--navbar) !important;
+	border-color: transparent !important;
+}
+
+.dataTables_info{
+	color: #ccc !important;
+	border-color: #ccc !important;
+}
+
+.page-item .page-link{
+	background-color: var(--navbar) !important;
+	line-height: 1.1 !important;
+}
+
+.page-item.active .page-link{
+	background-color: var(--blurple) !important;
+}
+
+.range .thumb:after {
+    background: var(--blurple) !important;
+}
+
+.form-range::-webkit-slider-thumb {
+	background: var(--blurple) !important;
+	border: 2px solid var(--elements);
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+	background: var(--blurple);
+	border-radius: 25px;
+	height: 5px;
+}
+
+.cm_container ul{
+	box-shadow: 0 0 5px #aaa;
+	background-color: var(--elements);
+	border-radius: 3px !important;
+}
+
+.cm_container li:hover{
+	background-color: var(--navbar);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+	font-size: 15px !important;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	color: var(--blurple) !important;
+	border-color: var(--blurple) !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.note, .note-blurple{
+	background-color: var(--elements);
+	color: var(--white);
+	border-color: var(--purple);
+}
